@@ -6,64 +6,70 @@
     <title>Love Website</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-            color: #555;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            color: #444;
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             text-align: center;
-            max-width: 350px;
+            max-width: 400px;
             width: 100%;
-            animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
-            font-size: 28px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         img {
-            width: 120px;
+            width: 100px;
             height: auto;
             margin-bottom: 20px;
-            animation: heartBeat 1.5s infinite;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: heartBeat 1.5s infinite ease-in-out;
         }
 
         .question {
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: #777;
+            font-family: 'Lato', sans-serif;
+            font-size: 22px;
+            margin-bottom: 35px;
+            color: #666;
         }
 
         .buttons {
             display: flex;
             justify-content: space-between;
+            gap: 15px;
         }
 
         .btn {
-            padding: 12px 25px;
-            font-size: 16px;
+            padding: 12px 30px;
+            font-size: 18px;
             border: none;
-            border-radius: 50px;
+            border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
-            background-color: #ff6f61;
+            background: linear-gradient(135deg, #ff6f61, #ff4f41);
             color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn:hover {
-            background-color: #ff4f41;
+            background: linear-gradient(135deg, #ff4f41, #ff6f61);
             transform: translateY(-3px);
         }
 
@@ -71,6 +77,7 @@
             position: relative;
             background-color: #f0c14b;
             color: #333;
+            transition: background-color 0.3s, transform 0.3s, left 0.3s ease, top 0.3s ease;
         }
 
         #noBtn:hover {
@@ -80,7 +87,7 @@
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: scale(0.8);
+                transform: scale(0.9);
             }
             to {
                 opacity: 1;
@@ -93,7 +100,7 @@
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
         }
     </style>
@@ -101,9 +108,10 @@
 <body>
 
     <div class="container">
-        <h1>Hi Nevin Sir,</h1>
+        <h1>Hi Everyone,</h1>
         <img src="WhatsApp Image 2024-08-28 at 23.55.05_a93f5bfc-Photoroom.png" alt="Heart">
-        <p class="question">Sir, oru 1000 rupa gpay cheyyavo??</p>
+        <img src="WhatsApp_Image_2024-08-28_at_23.56.58_17d79cf0-removebg-preview.png" alt="Heart">
+        <p class="question">Would you like to send a GPay of 1000 INR?</p>
         <div class="buttons">
             <button class="btn" id="yesBtn">Yes</button>
             <button class="btn" id="noBtn">No</button>
